@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class BankController {
+public class CustomerController {
     THttpClient httpClient;
     {
         try {
@@ -31,6 +31,4 @@ public class BankController {
     public void create(@RequestBody TCustomer tCustomer) throws TException {
         client.addAccountRequest(tCustomer);
     }
-
-
 }
